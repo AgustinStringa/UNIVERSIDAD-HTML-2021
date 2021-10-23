@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframes en HTML</title>
+    <link rel="stylesheet" href="iframes-styles.css" />
+  </head>
+  <body>
+    <h1 id="titulo">iframes en HTML</h1>
+
+    <div class="ventana">
+      <h3>
+        En esta ventana se visualiza un iframe hecho a base de otro documento
+        html propio
+      </h3>
+      <iframe id="listas-html" src="listas.html" frameborder="0"></iframe>
+    </div>
+
+    <script>
+      console.log(document.querySelector("#listas-html"));
+    </script>
+
+    <div class="notas">
+      <i>
+        la etiqueta i permite insertar otro documento HTML dentro del nuestro
+        propio
+      </i>
+      <br />
+      <i>
+        Es importante que los recursos que el iframe utilice estén disponibles
+        en el contexto que se inserta el mismo
+      </i>
+      <br />
+      <i>Cuando se usa generalmente iframs externos, esto está configurado</i>
+      <br />
+      <i
+        >Pero si se importa un documento HTML propio, será necesario importar
+        tambien los recursos (CSS; JS; ETC) que sean necesarios</i
+      >
+      <br />
+    </div>
+
+    <div class="ventana">
+      <iframe src="" frameborder="0" name="gm" id="gm"></iframe>
+
+      <div class="btn">
+        <a href="https://www.globalmentoring.com.mx" target="gm"
+          >Cargar pagina de global mentoring</a
+        >
+      </div>
+    </div>
+
+    <div class="notas">
+      <pre>
+            se pueden combinar las etiquetas a con los iframes para cargar sitios web con un boton
+            esta funcionalidad puede hacerse con JS, pero se simplifica totalmente con HTML
+            para esto es necesario darle un atributo name="" al < iframe > y darle este mismo valor al attr target del enlace  
+        </pre
+      >
+    </div>
+  </body>
+</html>

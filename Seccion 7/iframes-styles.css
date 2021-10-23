@@ -1,0 +1,22 @@
+.ventana {
+  border: 1px solid #222;
+  padding: 1rem;
+}
+
+#listas-html {
+  width: 100%;
+  box-shadow: 1px 1px 1px black;
+  border: 1px solid rgb(141, 141, 141);
+  background-color: #ccc;
+}
+
+#gm {
+  width: 100%;
+  box-shadow: 1px 1px 1px black;
+}
+
+.notas {
+  border: 2px solid lightslategray;
+  padding: 1rem;
+  margin: 1rem 0;
+}

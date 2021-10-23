@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+
+    <style>
+      .notas {
+        border: 2px solid lightslategray;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+    </style>
+
+    <link rel="stylesheet" href="table-styles.css" />
+  </head>
+  <body>
+    <p>Table >tr > td</p>
+
+    <pre>
+        Table
+            table head  
+                table row [table data*n]
+                table row [table data*n]
+                table row [table data*n]
+            table body
+                table row [table data*n]
+                table row [table data*n]
+                table row [table data*n]
+            table foot                 
+                table row [table data*n]
+                table row [table data*n]
+                table row [table data*n]    
+    </pre>
+
+    <div class="notas">
+      <i
+        >Podría utilizar el atributo border="1" en la etiqueta table para darle
+        un borde a la tabla</i
+      >
+      <br />
+      <i
+        >Lo ideal sería usarle para una visualizacion previa y darle los estilos
+        definidos por CSS</i
+      >
+    </div>
+
+    <!--table-->
+    <table border="1">
+      <caption style="border: 1px solid black">
+        <mark>Tabla de prueba HTML</mark>
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">nombre</th>
+          <th>numero</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Agustin</td>
+          <td>Stringa</td>
+          <td>123</td>
+        </tr>
+        <tr>
+          <!-- <td>Nicolas</td> -->
+          <td>Cage</td>
+          <td>182y3</td>
+        </tr>
+        <tr>
+          <td>Otro</td>
+          <td>dato</td>
+          <td>3.14</td>
+        </tr>
+        <tr>
+          <td>Here's a letter</td>
+          <td>for you</td>
+          <td>182</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">nombre</th>
+          <th>numero</th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="notas">
+      <i>
+        los atributos colspan y rowspan son propios de las etiquetas th o td y
+        se utilizan para indicar la cantidad de filas o columnas ocupa una
+        celda</i
+      >
+      <br />
+      <i
+        >Es importante que la cantidad de filas y columnas se corresponda con el
+        espacio ocupado por cada celda</i
+      >
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+:root {
+  --contador: rgb(11, 121, 121);
+}
+
+span {
+  color: var(--contador);
+}
+ol {
+  counter-reset: contador;
+  /*en todos los ol se reinicia la variable contador*/
+}
+
+ol > * {
+  counter-increment: contador;
+}
+
+ol li::before {
+  content: "Curso<---" counter(contador);
+  color: var(--contador);
+}
+
+ol li::after {
+  color: var(--contador);
+  content: "--->";
+}
